@@ -39,4 +39,90 @@ public class CartaBaralho extends Carta {
         super (frente);
     }
 
+
+
+//Tcolorida.java
+package backend;
+
+import console.Console;
+import cores.StringColorida;
+
+/**
+ *
+ * @author Joao
+ */
+public class Tcolorida {
+    public static void main(String[] args){
+        StringColorida disco = new StringColorida("4","CIANO", "VERMELHO");
+        CartaBaralho carta = new CartaBaralho(disco);
+        Console.println(carta);
+    }
 }
+
+//Tabuleiro.java
+
+package backend;
+
+import mecanicas.Carta;
+import mecanicas.Tabuleiro;
+
+/**
+ *
+ * @author Joao
+ */
+public class TabuleiroConnect extends Tabuleiro {
+
+    public TabuleiroConnect(int numLinhas, int numColunas, Carta fundo) {
+        super(numLinhas, numColunas, fundo);
+    }
+    
+}
+/*
+    
+          
+          
+          
+          
+          
+          
+*/
+
+}
+
+//CartaBaralho.java
+package backend;
+
+import cores.StringColorida;
+import mecanicas.Carta;
+
+/**
+ *
+ * @author Joao
+ */
+public class CartaBaralho extends Carta{
+
+    public CartaBaralho(StringColorida frente) {
+        super(frente);
+    }
+    
+}
+
+//Main.java
+
+package main;
+
+/**
+ *
+ * @author Joao
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+    
+}
+
